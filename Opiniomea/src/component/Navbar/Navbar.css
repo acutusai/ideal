@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #000000; /* Background set to black */
+    padding: 0 20px;
+  }
+  
+  .navbar-logo a {
+    color: #00bf63; /* Logo color set to green */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo a:hover {
+    color: #ffffff; /* Hover effect changes color to white */
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #ffffff; /* Link color set to white */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #00bf63; /* Hover effect changes color to green */
+  }
+  
+  .navbar-links .login-btn,
+  .navbar-links .join-btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-links .login-btn {
+    background-color: #00bf63; /* Button background set to green */
+    border: 1px solid #00bf63;
+    color: #000000; /* Button text set to black */
+  }
+  
+  .navbar-links .login-btn:hover {
+    background-color: #ffffff; /* Hover effect for login button */
+    color: #000000;
+  }
+  
+  .navbar-links .join-btn {
+    background-color: #ffffff; /* Button background set to white */
+    border: none;
+    color: #00bf63; /* Button text set to green */
+  }
+  
+  .navbar-links .join-btn:hover {
+    background-color: #00bf63; /* Hover effect for join button */
+    color: #ffffff;
+  }
+  
+  button {
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .navbar-links a,
+    .navbar-links .login-btn,
+    .navbar-links .join-btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  
